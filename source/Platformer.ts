@@ -16,7 +16,7 @@ export class Platformer
 	/**
 	 * 
 	 */
-	async createCluster()
+	async createCluster(info: X.IClusterInfo)
 	{
 		
 	}

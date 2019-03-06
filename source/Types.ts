@@ -19,3 +19,33 @@ export interface ICloudCredentials
 	key: string;
 	secret: string;
 }
+
+/**
+ * 
+ */
+export interface IClusterInfo
+{
+	/**
+	 * Stores the minimum number of nodes in the cluster.
+	 * A value of 0 indicates that the smallest available unit
+	 * of computing should be used.
+	 */
+	dataNodeCount: number;
+	
+	/**
+	 * Stores the desired amount of storage capacity on the cluster.
+	 * A value of 0 indicates that the server with the smallest available
+	 * disk space should be used.
+	 */
+	dataCapacity: number;
+	
+	/**
+	 * 
+	 */
+	functionNodeCount: number;
+	
+	/**
+	 * 
+	 */
+	functionNodeSize: 
+}
