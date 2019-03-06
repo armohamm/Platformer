@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "es6",
+		"target": "es2017",
+		"moduleResolution": "node",
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"stripInternal": true,
+		"strict": true,
+		"baseUrl": "./",
+		"outDir": "./build",
+		"lib": [
+			"es2017",
+		]
+	},
+	"include": [
+		"**/*.ts"
+	]
+}

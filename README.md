@@ -1,10 +1,19 @@
-# Platformer Specification
+# Platformer
 
 ## Preface
 
-The deliverable of this project is to produce a simple TypeScript library that can be used by Node.JS applications to spin up a suite of machines, add and remove JavaScript functions to them, and perform updates and maintenance. This TypeScript library will be fully scaffolded and well commented before the project begins. Each function in the library will be empty, waiting for an implementation.
+The deliverable of this project is to produce a simple TypeScript library that can be used by Node.JS applications to spin up a fleet of machines, add and remove JavaScript FaaS functions to them, and perform updates and maintenance. This TypeScript library will be fully scaffolded and well commented before the project begins. Each function in the library will be empty, waiting for an implementation.
 
 This library is most likely going to be embedded within the context of an [Electron](https://electronjs.org/) application, running on a Mac or Windows desktop. The end user of this application is most likely a business analyst, and is likely unfamiliar with opening the terminal and executing cryptic commands. They will not have developer-specific software installed on their machines, and so this library needs to be completely self-supporting (it must install any missing software on it's own that it needs in order to run).
+
+# Requirements
+
+In order to work on this project, you should have the following things installed on your machine:
+- Visual Studio Code
+- TypeScript
+- RollupJS
+- Jest
+
 
 ## Technologies To Use
 
@@ -78,3 +87,6 @@ This is a Kubernetes installer that supposedly simplifies the installation of Ku
 
 - [ ] What are the internal parameters to this library?
 - [ ] Do we need default configurations? (i.e. Simple, Scalable, Custom)
+
+
+
