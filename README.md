@@ -1,5 +1,7 @@
 # Platformer
 
+This is a specification for a library, as well as a scaffolded project that should be cloned and fleshed out. The project should be ready for hand-off around the middle of March 2019.
+
 ## Preface
 
 The deliverable of this project is to produce a simple TypeScript library that can be used by Node.JS applications to spin up a fleet of machines, add and remove JavaScript FaaS functions to them, and perform updates and maintenance. Each function in the library will be empty, waiting for an implementation.
