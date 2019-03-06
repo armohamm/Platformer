@@ -47,5 +47,5 @@ export interface IClusterInfo
 	/**
 	 * 
 	 */
-	functionNodeSize: 
+	functionNodeSize: number;
 }
