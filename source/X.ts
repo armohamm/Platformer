@@ -7,4 +7,5 @@
 //
 
 export * from "./Platformer";
+export * from "./Types";
 export * from "./WellKnownUrls";

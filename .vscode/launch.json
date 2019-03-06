@@ -4,7 +4,7 @@
 		"type": "node",
 		"request": "launch",
 		"name": "Debug Project",
-		"program": "${workspaceFolder}/Build/Dev/Quick/Start.js", 
+		"program": "${workspaceFolder}/build/X.js", 
 		"internalConsoleOptions": "openOnSessionStart",
 		"sourceMaps": true
 	},

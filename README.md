@@ -2,9 +2,11 @@
 
 ## Preface
 
-The deliverable of this project is to produce a simple TypeScript library that can be used by Node.JS applications to spin up a fleet of machines, add and remove JavaScript FaaS functions to them, and perform updates and maintenance. This TypeScript library will be fully scaffolded and well commented before the project begins. Each function in the library will be empty, waiting for an implementation.
+The deliverable of this project is to produce a simple TypeScript library that can be used by Node.JS applications to spin up a fleet of machines, add and remove JavaScript FaaS functions to them, and perform updates and maintenance. Each function in the library will be empty, waiting for an implementation.
 
 This library is most likely going to be embedded within the context of an [Electron](https://electronjs.org/) application, running on a Mac or Windows desktop. The end user of this application is most likely a business analyst, and is likely unfamiliar with opening the terminal and executing cryptic commands. They will not have developer-specific software installed on their machines, and so this library needs to be completely self-supporting (it must install any missing software on it's own that it needs in order to run).
+
+This library is going to be consumed by other developers, and will be packaged in an application that will be used by thousands, if not hundreds of thousands of people. Code quality (clarity, ease of debugging, commenting, documentation)  is critical.
 
 # Requirements
 
@@ -25,8 +27,9 @@ In order to work on this project, you should have the following things installed
 - DGraph - https://dgraph.io/
 - Nuclio - https://nuclio.io
 - Node.js - https://nodejs.org/
-- TypeScript - https://www.typescriptlang.org/
 - Puppeteer - https://pptr.dev/
+- TypeScript - https://www.typescriptlang.org/
+- Jest - https://jestjs.io/
 
 ## Service Providers To Use
 
@@ -74,19 +77,12 @@ The Linux distribution we'll be using is [RancherOS](https://rancher.com/rancher
 
 This is a Kubernetes installer that supposedly simplifies the installation of Kubernetes. Although not strictly necessary, this library should be used internally in the library if it's determined that it will simplify the construction of the library itself, and make the source code more understandable to non-Kubernetes experts.
 
+## End-to-End Tests
 
+The testing framework that this project will use is [Jest](https://jestjs.io/). Jest is desirable because it's the only JavaScript testing framework that provides proper support for debugging the actual tests. This project does not require unit tests (i.e. testing individual functions), but it should have passing end-to-end tests (aka "Integration Tests").
 
 ## Future
 
 - Platformer should enable programatic access to DGraph enterprise features, but these features are not yet implemented in DGraph. See the [DGraph roadmap](https://github.com/dgraph-io/dgraph/issues/2894) for more information.
 - Platformer should eventually be able to to install [Prometheus](https://prometheus.io/) for monitoring, and [Sentry](https://sentry.io/welcome/) for bug tracking. The purpose of this would not necessarily to enable end-users to perform their own monitoring, but rather to have these tools on-hand for a system administrator to use in the event that something goes wrong.
-
-
-
-## Unknowns
-
-- [ ] What are the internal parameters to this library?
-- [ ] Do we need default configurations? (i.e. Simple, Scalable, Custom)
-
-
 
